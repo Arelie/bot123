@@ -14,7 +14,7 @@ def on_ready():
     print('------')
 
 
-@client.command(name="start")
+@client.command(name="*")
 @commands.has_permissions(administrator=True)
 @asyncio.coroutine
 def start(*message2):
@@ -25,7 +25,7 @@ def start(*message2):
         for x in message2:
             message = message + x + " "
     while True:
-        yield from asyncio.sleep(10)
+        yield from asyncio.sleep(18000)
         yield from client.say(message)
 
 
@@ -38,13 +38,6 @@ loop = asyncio.get_event_loop()
 def stop():
     while True:
         loop.stop
-
-
-@client.command(name="close")
-@commands.has_permissions(administrator=True)
-@asyncio.coroutine
-def close():
-    while True:
         loop.close
 
 
