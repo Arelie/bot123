@@ -19,11 +19,11 @@ def on_ready():
 @asyncio.coroutine
 def message():
     while True:
-        yield from asyncio.sleep(43200)
+        yield from asyncio.sleep(86400)
         yield from client.say('Make sure to register on time for our tournaments every saturday at:' + '\n' + 'https://www.legionesports.com/events/' + '\n'
                           + '\n' + 'Also Legion Esports T-shirt are here!' + '\n' + 'https://cdn.discordapp.com/attachments/269220781710376960/331128635681406976/3d_design.jpg'
                           + '\n' + '\n' + 'Pre-order can be made at' + '\n' + 'Thimo@legionesports.com' + '\n' + 'First edition sales starts at €34,99. If we hit a good amount of orders. People who pre ordered already get a discount.'
-                          + '\n' + 'For more info you can message anyone in Legion Esports trough Discord.')
+                          + '\n' + 'For more info you can message anyone in Legion Esports through Discord.')
 
 
 @client.command(name="*")
